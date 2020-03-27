@@ -26,7 +26,7 @@ class App extends Component{
 
   componentDidUpdate(prevProps, prevState){
     if(prevState.value !== this.state.value){
-      alert("update");
+      alert("update")
       const API=`https://api.openweathermap.org/data/2.5/weather?q=${this.state.value}&appid=${APIKey}&units=metric`
   
       fetch(API)
